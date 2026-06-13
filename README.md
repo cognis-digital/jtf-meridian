@@ -12,6 +12,45 @@
 
 ---
 
+## Usage — step by step
+
+A full lifecycle with the `jtf` console command — every subcommand accepts
+`--format table|json` and `--no-fleet` (force deterministic offline output):
+
+1. **Install** the CLI (puts `jtf` on your PATH):
+
+   ```sh
+   pipx install "git+https://github.com/cognis-digital/jtf-meridian.git"
+   ```
+
+2. **Inspect the command structure** to see which division owns what. `structure` prints the ASCII org chart; `roster` / `divisions` / `domains` describe the divisions and the six analytic lenses; `callsign` resolves a single callsign:
+
+   ```sh
+   jtf structure
+   jtf divisions
+   jtf callsign MASON --format json
+   ```
+
+3. **Run a multi-domain assessment.** `brief` routes a topic to the owning division(s) and reads it across the six lenses. With a local fleet slot up it produces a live strategic read; offline it returns a deterministic scaffold:
+
+   ```sh
+   jtf brief "critical-minerals supply chain"
+   ```
+
+4. **Read / use the output.** Default `table` formatting prints a readable Markdown brief (division reads, lenses, command synthesis); `--format json` emits the structured assessment for piping into another tool or a test:
+
+   ```sh
+   jtf brief "critical-minerals supply chain" --format json | jq .routed_to
+   ```
+
+5. **Task a division, wargame, or red-team a plan**, then wire any of these into automation. Pass `--no-fleet` in CI so output is deterministic and needs no model server (commands exit non-zero only on errors, e.g. an unknown callsign):
+
+   ```sh
+   jtf task prometheus "the SMR investment thesis" --no-fleet
+   jtf wargame "a competitor open-sources a rival suite" --no-fleet --format json
+   jtf redteam "go all-in on a single enterprise client" --no-fleet
+   ```
+
 <!-- cognis:layman:start -->
 ## What is this?
 
