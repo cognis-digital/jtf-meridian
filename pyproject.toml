@@ -1,0 +1,23 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "jtf-meridian"
+version = "0.1.0"
+description = "Multi-domain command & think-tank framework for Cognis Digital LLC, wired to the local uncensored fleet."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "LicenseRef-COCL-1.0" }
+authors = [{ name = "Cognis Digital" }]
+keywords = ["strategy", "decision-support", "multi-domain", "think-tank",
+            "command-structure", "osint", "wargame", "red-team", "llm", "fleet"]
+
+[project.scripts]
+jtf = "jtf_meridian.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/cognis-digital/jtf-meridian"
+
+[tool.hatch.build.targets.wheel]
+packages = ["jtf_meridian"]

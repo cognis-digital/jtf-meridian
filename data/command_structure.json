@@ -1,0 +1,277 @@
+{
+  "command": {
+    "name": "JTF MERIDIAN",
+    "commander": "ARCHON",
+    "principal": "Christopher Hyatt, Founder & CEO",
+    "authority": "All cross-division authority; sets intent, allocates effort, synthesizes the common operating picture.",
+    "entity": "Cognis Digital LLC",
+    "motto": "Omnia Video \u00b7 Omnia Scio",
+    "tagline": "Making Tomorrow Better Today"
+  },
+  "divisions": [
+    {
+      "key": "blackbook",
+      "name": "TF BLACKBOOK",
+      "callsign": "ORACLE",
+      "domain": "Quant / Finance",
+      "mandate": "Systematic trading, market intelligence, and capital strategy. Owns the autonomous trading stack and macro/crypto/insider signal work.",
+      "keywords": [
+        "trading",
+        "market",
+        "alpha",
+        "quant",
+        "finance",
+        "crypto",
+        "macro",
+        "portfolio",
+        "hedge",
+        "alpaca",
+        "13f",
+        "insider",
+        "risk"
+      ],
+      "subteams": [
+        {
+          "callsign": "ALPHA",
+          "name": "Alpha Desk",
+          "mandate": "HFT / intraday systematic trading (Alpaca)."
+        },
+        {
+          "callsign": "BRAVO",
+          "name": "Bravo Desk",
+          "mandate": "Macro regime, rates, cross-asset."
+        },
+        {
+          "callsign": "CHARLIE",
+          "name": "Charlie Desk",
+          "mandate": "Crypto / digital assets."
+        },
+        {
+          "callsign": "DELTA",
+          "name": "Delta Cell",
+          "mandate": "Congress / 13F / insider-flow tracking."
+        }
+      ]
+    },
+    {
+      "key": "nullbyte",
+      "name": "GHOST CELL \u00b7 NULLBYTE",
+      "callsign": "SPECTER",
+      "domain": "Cyber / Security",
+      "mandate": "Offensive research (authorized), defensive engineering (NIST/CMMC), OSINT/FOIA, and vendor liaison. Owns the security-tooling suite.",
+      "keywords": [
+        "security",
+        "cyber",
+        "ctf",
+        "pentest",
+        "osint",
+        "nist",
+        "cmmc",
+        "vuln",
+        "threat",
+        "ioc",
+        "soc",
+        "blue",
+        "red",
+        "forensics",
+        "malware"
+      ],
+      "subteams": [
+        {
+          "callsign": "RED",
+          "name": "Red Cell",
+          "mandate": "Offensive research, CTF, authorized testing."
+        },
+        {
+          "callsign": "BLUE",
+          "name": "Blue Cell",
+          "mandate": "Defense, detection engineering, NIST/CMMC."
+        },
+        {
+          "callsign": "BLACK",
+          "name": "Black Cell",
+          "mandate": "OSINT, FOIA, open-source intelligence."
+        },
+        {
+          "callsign": "PURPLE",
+          "name": "Purple Cell",
+          "mandate": "Vendor liaison, purple-team exercises."
+        }
+      ]
+    },
+    {
+      "key": "athena",
+      "name": "DIV-6 \u00b7 ATHENA-PRIME",
+      "callsign": "SAGE",
+      "domain": "AI / R&D",
+      "mandate": "Applied AI research and engineering: LLM systems, multi-agent orchestration, evaluation & safety, generative media, and research.",
+      "keywords": [
+        "ai",
+        "ml",
+        "llm",
+        "model",
+        "agent",
+        "rag",
+        "eval",
+        "fleet",
+        "research",
+        "embedding",
+        "fine-tune",
+        "inference",
+        "prompt"
+      ],
+      "subteams": [
+        {
+          "callsign": "COGNI-1",
+          "name": "Cogni-1",
+          "mandate": "LLM systems."
+        },
+        {
+          "callsign": "COGNI-2",
+          "name": "Cogni-2",
+          "mandate": "Multi-agent orchestration."
+        },
+        {
+          "callsign": "COGNI-3",
+          "name": "Cogni-3",
+          "mandate": "Evaluation & safety."
+        },
+        {
+          "callsign": "COGNI-4",
+          "name": "Cogni-4",
+          "mandate": "Generative media."
+        },
+        {
+          "callsign": "COGNI-5",
+          "name": "Cogni-5",
+          "mandate": "Research / horizon scanning."
+        }
+      ]
+    },
+    {
+      "key": "ironclad",
+      "name": "TF IRONCLAD",
+      "callsign": "ANVIL",
+      "domain": "Government / Defense Contracting",
+      "mandate": "Public-sector business development: SAM.gov, primes, FAR/DFARS/CMMC compliance, IC liaison, and research programs (SBIR/DARPA).",
+      "keywords": [
+        "government",
+        "govcon",
+        "sam.gov",
+        "far",
+        "dfars",
+        "cmmc",
+        "sbir",
+        "darpa",
+        "contract",
+        "prime",
+        "compliance",
+        "clearance",
+        "defense",
+        "federal",
+        "rfp",
+        "proposal"
+      ],
+      "subteams": [
+        {
+          "callsign": "FOXTROT",
+          "name": "Foxtrot",
+          "mandate": "SAM.gov opportunity capture."
+        },
+        {
+          "callsign": "GOLF",
+          "name": "Golf",
+          "mandate": "Prime contractor partnerships."
+        },
+        {
+          "callsign": "HOTEL",
+          "name": "Hotel",
+          "mandate": "FAR/DFARS/CMMC compliance."
+        },
+        {
+          "callsign": "INDIA",
+          "name": "India (IC)",
+          "mandate": "Intelligence-community business dev."
+        },
+        {
+          "callsign": "JULIET",
+          "name": "Juliet (DARPA)",
+          "mandate": "Research programs / SBIR / DARPA."
+        }
+      ]
+    },
+    {
+      "key": "prometheus",
+      "name": "TF PROMETHEUS",
+      "callsign": "FORGE",
+      "domain": "Energy",
+      "mandate": "Energy strategy and analysis across nuclear/SMR, oil & gas/LNG/H2, renewables, and grid/critical-infrastructure resilience.",
+      "keywords": [
+        "energy",
+        "nuclear",
+        "smr",
+        "oil",
+        "gas",
+        "lng",
+        "hydrogen",
+        "renewable",
+        "solar",
+        "wind",
+        "grid",
+        "power",
+        "utility",
+        "cisa"
+      ],
+      "subteams": [
+        {
+          "callsign": "INDIA-N",
+          "name": "India (Nuclear)",
+          "mandate": "Nuclear / SMR."
+        },
+        {
+          "callsign": "JULIET-H",
+          "name": "Juliet (Hydrocarbon)",
+          "mandate": "Oil & gas / LNG / hydrogen."
+        },
+        {
+          "callsign": "KILO",
+          "name": "Kilo",
+          "mandate": "Renewables."
+        },
+        {
+          "callsign": "LIMA",
+          "name": "Lima",
+          "mandate": "Grid resilience / CISA / critical infrastructure."
+        }
+      ]
+    },
+    {
+      "key": "foundry",
+      "name": "TF FOUNDRY",
+      "callsign": "MASON",
+      "domain": "Revenue / Client Services",
+      "mandate": "The revenue engine. Public brand DevPairer Pro: fixed-price software delivery that funds every other division. 'Keep the lights on.'",
+      "keywords": [
+        "revenue",
+        "client",
+        "devpairer",
+        "mvp",
+        "saas",
+        "ecommerce",
+        "delivery",
+        "consulting",
+        "build",
+        "fixed-price",
+        "cash",
+        "billing"
+      ],
+      "subteams": [
+        {
+          "callsign": "MASON",
+          "name": "DevPairer Pro",
+          "mandate": "Fixed-price MVP / SaaS / modernization delivery."
+        }
+      ]
+    }
+  ]
+}
