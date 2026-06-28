@@ -1,0 +1,35 @@
+$ jtf-meridian-emit --help
+
+usage: jtf-meridian [-h] [--version]
+                    {structure,roster,divisions,domains,callsign,brief,task,wargame,redteam} ...
+
+jtf — command-line access to the JTF MERIDIAN think-tank.
+
+Subcommands:
+  structure          show the command structure (ASCII org chart)
+  roster             full roster as JSON
+  divisions          list divisions + mandates
+  domains            list the multi-domain analytic lenses
+  callsign <C>       resolve a callsign
+  brief <topic>      multi-domain assessment (fleet-backed; offline fallback)
+  task <div> <txt>   ask one division to analyze something
+  wargame <txt>      analytic tabletop (TTX) of a scenario
+  redteam <txt>      adversarial critique of a plan
+
+--format table|json   ·   --no-fleet  (force offline, deterministic output)
+
+positional arguments:
+  {structure,roster,divisions,domains,callsign,brief,task,wargame,redteam}
+    structure           show the command structure
+    roster              full roster as JSON
+    divisions           list divisions + mandates
+    domains             list multi-domain analytic lenses
+    callsign            resolve a callsign
+    brief               multi-domain assessment of a topic
+    task                ask one division to analyze
+    wargame             analytic tabletop (TTX)
+    redteam             adversarial critique of a plan
+
+options:
+  -h, --help            show this help message and exit
+  --version             show program's version number and exit

@@ -12,6 +12,86 @@
 
 ---
 
+
+<!-- cognis:example:start -->
+## 🔎 Example output
+
+Real, reproducible output from the tool — runs offline:
+
+```console
+$ jtf-meridian-emit --version
+jtf-meridian 0.1.0
+```
+
+```console
+$ jtf-meridian-emit --help
+usage: jtf-meridian [-h] [--version]
+                    {structure,roster,divisions,domains,callsign,brief,task,wargame,redteam} ...
+
+jtf — command-line access to the JTF MERIDIAN think-tank.
+
+Subcommands:
+  structure          show the command structure (ASCII org chart)
+  roster             full roster as JSON
+  divisions          list divisions + mandates
+  domains            list the multi-domain analytic lenses
+  callsign <C>       resolve a callsign
+  brief <topic>      multi-domain assessment (fleet-backed; offline fallback)
+  task <div> <txt>   ask one division to analyze something
+  wargame <txt>      analytic tabletop (TTX) of a scenario
+  redteam <txt>      adversarial critique of a plan
+
+--format table|json   ·   --no-fleet  (force offline, deterministic output)
+
+positional arguments:
+  {structure,roster,divisions,domains,callsign,brief,task,wargame,redteam}
+    structure           show the command structure
+    roster              full roster as JSON
+    divisions           list divisions + mandates
+    domains             list multi-domain analytic lenses
+    callsign            resolve a callsign
+    brief               multi-domain assessment of a topic
+    task                ask one division to analyze
+    wargame             analytic tabletop (TTX)
+    redteam             adversarial critique of a plan
+
+options:
+  -h, --help            show this help message and exit
+  --version             show program's version number and exit
+```
+
+> Blocks above are real `jtf-meridian` output — reproduce them from a clone.
+
+**Sample result format** _(illustrative values — run on your own data for real findings):_
+
+```
+{
+"incident_id": "INC-001",
+"created_at": "2023-02-15T14:30:00Z",
+"updated_at": "2023-02-15T14:35:00Z",
+"severity": "high",
+"impact": "medium",
+"confidence": "low",
+"labels": ["malware", "ransomware"],
+"findings": [
+  {
+    "id": "FIND-001",
+    "title": "Suspicious Network Traffic",
+    "description": "Anomalies detected on port 443",
+    "severity": "medium"
+  },
+  {
+    "id": "FIND-002",
+    "title": "Unusual File Access",
+    "description": "Access to file system by unknown user",
+    "severity": "high"
+  }
+]
+}
+```
+
+<!-- cognis:example:end -->
+
 ## Usage — step by step
 
 A full lifecycle with the `jtf` console command — every subcommand accepts

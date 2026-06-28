@@ -1,0 +1,3 @@
+$ jtf-meridian-emit --version
+
+jtf-meridian 0.1.0
